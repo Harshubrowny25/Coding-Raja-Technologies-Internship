@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RESUME</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container bgg" id="cv-form" class="bg">
+      <h1 class="text-center my-2" style="color: rgb(27, 3, 4)">RESUME GENERATOR</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <h3 style="color: rgb(22, 21, 21)">Personal Information</h3>
+          <div class="form-group bg">
+            <label for="nameField">Your Name</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="enter your name"
+              id="nameField"
+            />
+          </div>
+          <div class="form-group mt-2 bg">
+            <label for="contactField">Your Contact</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="enter your contact"
+              id="contactField"
+            />
+          </div>
+          <div class="form-group mt-2 bg">
+            <label for="addressField">Your Address</label>
+            <textarea
+              type="text"
+              class="form-control"
+              placeholder="enter your address"
+              id="addressField"
+              rows="5"
+            ></textarea>
+          </div>
+          <p class="text-secondary my-3">Important Links</p>
+          <div class="form-group mt-2 bg">
+            <label for="fbField">Facebook Links</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="enter your contact"
+              id="fbField"
+            />
+          </div>
+          <div class="form-group mt-2 bg">
+            <label for="instaField">Instagram</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="enter your contact"
+              id="instaField"
+            />
+          </div>
+          <div class="form-group mt-2 bg">
+            <label for="linkedField">LinkedIn</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="enter your contact"
+              id="linkedField"
+            />
+          </div>
+        </div>
+
+        <div class="col-md-6 ">
+          <h3 style="color: rgb(15, 15, 15)">Professional Information</h3>
+          <div class="form-group mt-2 bg">
+            <label for="">Objective</label>
+            <textarea
+              class="form-control"
+              placeholder="enter here"
+              rows="5"
+              id="ObjectiveField"
+            ></textarea>
+          </div>
+
+          <div class="form-group mt-2 bg" id="we">
+            <label for="">Work Experience</label>
+            <textarea
+              class="form-control weField"
+              placeholder="enter here"
+              rows="3"
+            ></textarea>
+            <!-- new textarea -->
+            <div class="container  mt-2" id="weAddButton">
+              <button onclick="addNewWEField()" class="btn btn-primary btn-sm">
+                Add
+              </button>
+            </div>
+          </div>
+
+          <div class="form-group mt-2 bg" id="aq">
+            <label for="">Academic Qualification</label>
+            <textarea
+              class="form-control eqField"
+              placeholder="enter here"
+              rows="3"
+            ></textarea>
+            <div class="container  mt-2" id="aqAddButton">
+              <button onclick="addNewAQField()" class="btn btn-primary btn-sm">
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container text-center mt-3">
+        <button onclick="generateCV()" class="btn btn-primary btn-lg">
+          Generate CV
+        </button>
+      </div>
+    </div>
+    <!-- cv template -->
+
+    <div class="container" id="cv-template">
+      <div class="row">
+        <div class="col-md-4 py-5 background">
+          <img
+            src="image.jpg"
+            alt=""
+            id="imgT"
+            class="img-fluid myImg"
+            style="width: 200px"
+          />
+
+          <div class="container ">
+            <p id="nameT1">Joseph Vijay</p>
+            <p id="contactT">+6382385519,+8838983253</p>
+            <p id="addressT">55/23 gandhinagar,chennai</p>
+            <hr />
+
+            <p>
+              <a id="fbT" href="#1">hhtps://www.facebook.com/vijay</a>
+            </p>
+            <p>
+              <a id="instaT" href="#1">hhtps://www.instagram.com/@actorvijay</a>
+            </p>
+            <p>
+              <a id="linkedT" href="#1">hhtps://www.linkedin.com/vijay</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-8 py-5">
+          <h1 id="nameT2" class="text-center" style="font-weight: 980">
+            Joseph Vijay
+          </h1>
+
+          <!--objective -->
+          <div class="card mt-4">
+            <div class="card-header background">
+              <h3>Objective</h3>
+            </div>
+            <div class="card-body">
+              <p id="ObjectiveT">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptate ipsa animi nesciunt quaerat natus similique deserunt
+                quod in deleniti omnis nostrum iure optio, eos iusto tempora
+                blanditiis sequi soluta! Ea neque, eius aperiam corporis cumque
+                dolore obcaecati voluptatum maxime minus ratione quod
+                accusantium, consectetur pariatur voluptatibus dolor, quisquam
+                excepturi architecto!
+              </p>
+            </div>
+          </div>
+          <!-- work experience -->
+          <div class="card mt-4">
+            <div class="card-header background">
+              <h3>Work Experience</h3>
+            </div>
+            <div class="card-body">
+              <ul id="weT">
+                <li>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Autem, accusamus.
+                </li>
+                <li>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Autem, accusamus.
+                </li>
+                <li>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Autem, accusamus.
+                </li>
+                <li>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Autem, accusamus.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- academic qualification-->
+          <div class="card mt-4">
+            <div class="card-header background">
+              <h3>Academic Qualification</h3>
+            </div>
+            <div class="card-body">
+              <ul id="aqT">
+                <li>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Autem, accusamus.
+                </li>
+                <li>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Autem, accusamus.
+                </li>
+                <li>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Autem, accusamus.
+                </li>
+                <li>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Autem, accusamus.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="container mt-3 text-center">
+            <button onclick="printCV()" class="btn background">Print CV</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

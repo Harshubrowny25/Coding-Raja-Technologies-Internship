@@ -1,0 +1,18 @@
+#cv-template {
+    display: none;
+  }
+  
+  .myImg {
+    /* border: 1px solid red; */
+    border-radius: 50%;
+  }
+  
+  .background {
+    background-color: rgb(255, 0, 119);
+  }
+  .bg {
+    background-color: lightgray;
+  }
+  .bgg {
+    background-image: linear-gradient(rgb(255, 0, 247), rgb(224, 224, 130));
+  }
